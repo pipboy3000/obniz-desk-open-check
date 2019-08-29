@@ -15,12 +15,12 @@ obniz.onconnect = async function() {
     vcc: 3
   });
   obniz.repeat(async () => {
-    let avg = await measureAvg(hcsr04);
+    const avg = await measureAvg(hcsr04);
 
     // console.log(avg);
     displayAvg(obniz, avg);
 
-    let state = avg > THRESHOLD ? "open" : "close";
+    const state = avg > THRESHOLD ? "open" : "close";
     console.info(state);
     postToIFTTT(state);
   }, 1000);
