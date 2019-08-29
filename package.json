@@ -1,0 +1,21 @@
+{
+  "name": "obniz-desk-open-check",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "Masami Asai <shakeforme@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "canvas": "^2.6.0",
+    "dotenv": "^8.1.0",
+    "obniz": "^2.2.0"
+  },
+  "devDependencies": {
+    "prettier": "^1.18.2"
+  }
+}
